@@ -17,10 +17,8 @@ const exerciseTwo = () => {
     let increases = 0;
     let windows = [];
     measurements.forEach((item, index) => {
-        let secondValue = measurements[index + 1] || 0;
-        let thirdValue = measurements[index + 2] || 0;
-        if (secondValue > 0 && thirdValue > 0) {
-            let result = item + secondValue + thirdValue;
+        if (index <= measurements.length-2) {
+            let result = item + measurements[index + 1] + measurements[index + 2];
             windows.push(result);
         }
     });
@@ -34,4 +32,3 @@ const exerciseTwo = () => {
 
 exerciseOne();
 exerciseTwo();
-
