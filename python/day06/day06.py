@@ -35,10 +35,6 @@ def initializeFishCounts():
 
 
 # Exercise 2
-<<<<<<< HEAD
-=======
-
->>>>>>> 2db849d3ad07ad9e46acde9fe1d9d6be9cf2b662
 def updateFishCount(fishCounts):
     newFishesCount = 0
     for i in range(len(fishCounts)):
