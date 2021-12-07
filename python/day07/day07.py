@@ -1,5 +1,3 @@
-import statistics
-
 f = open('./input.txt', 'r')
 data = []
 for x in f:
